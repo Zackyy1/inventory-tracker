@@ -1,0 +1,57 @@
+@import "../../../styles.less";
+
+.overlay.add-item-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.705);
+    .form-wrapper {
+        margin: 50px auto;
+        min-width: 400px;
+        max-width: 500px;
+        width: 100%;
+        background-color: #fff;
+        height: 400px;
+        overflow-y: scroll;
+        
+        h3 {
+            text-align: center;
+            padding: @grid;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 48px;
+            position: relative;
+            .field {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                padding: @grid 0;
+                label {
+                    text-align: left;
+                    width: 70%;
+
+                }
+                input {
+                    width: 70%;
+                    height: @grid-gutter*2;
+                }
+            }
+
+            .buttons {
+                float: right;
+                align-self: flex-end;
+                position: absolute;
+                bottom: 0;
+
+                button.btn {
+                    margin: 0 12px;
+                }
+            }
+
+        }
+    }
+}

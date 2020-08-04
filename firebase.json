@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "site": "chic-inventuur",
+    "public": "dist/chic-inventory",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "chic-inventory/index.html"
+      }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

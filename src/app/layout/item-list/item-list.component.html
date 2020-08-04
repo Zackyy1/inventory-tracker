@@ -1,0 +1,15 @@
+<section id="item-list">
+
+    <!-- Overlay -->
+    <app-item-add-page class="hidden" data-js-add-item-overlay></app-item-add-page>
+    <!-- Overlay -->
+
+
+    <button data-js-add-new-item class="quick-button">+</button>
+    <ul>
+        <li class="text" *ngFor="let item of items | async">
+          {{item.name}}
+        </li>
+      </ul>
+</section>
+

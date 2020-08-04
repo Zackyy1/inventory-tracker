@@ -1,0 +1,17 @@
+{
+  "targets": {
+    "inventory-tracker-3db97": {
+      "hosting": {
+        "chic-inventory": [
+          "chic-inventuur"
+        ],
+        "chic-inventuur": [
+          "inventory-tracker-3db97"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "inventory-tracker-3db97"
+  }
+}
