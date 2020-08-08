@@ -14,6 +14,7 @@ export class FsService {
   constructor(private fs: AngularFirestore) {
     // this.items = firestore.collection('items').valueChanges();
     this.itemsCollection = fs.collection('items');
+    this.items = this.itemsCollection.valueChanges();
    }
 
 

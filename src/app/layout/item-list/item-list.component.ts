@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import $ from 'jquery'
 import { Observable } from 'rxjs';
+import { FsService } from 'src/app/shared/fs.service';
 
 @Component({
   selector: 'app-item-list',
@@ -13,7 +14,8 @@ export class ItemListComponent implements OnInit {
   ADD_ITEM_OVERLAY: string = '[data-js-add-item-overlay]';
   items: Observable<any[]>;
 
-  constructor() {
+  constructor(private fs: FsService) {
+    this.items = fs.items;
   }
    
 
